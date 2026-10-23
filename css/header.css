@@ -1,0 +1,187 @@
+/* header */
+#header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid transparent;
+  padding: 0 60px;
+  position: fixed;
+  z-index: 99999;
+}
+/* 스크롤했을 때 GNB 스타일 */
+#header.scrolled {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgb(229, 232, 235);
+}
+
+/* 로고 */
+#header h1 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+/* 대메뉴 */
+#header .gnb {
+  font-weight: 600;
+}
+#header .gnb a {
+  margin: 0 20px;
+  font-size: 17px;
+}
+#header .lognbt {
+  color: #fff;
+  background-color: #1a1a1a;
+  padding: 0 20px;
+  height: 36px;
+  font-size: 13px;
+  border-radius: 7px;
+  line-height: 36px;
+  transition: all 0.6s;
+}
+#header .lognbt:hover {
+  background-color: #504f4f;
+  transition: all 0.6s;
+}
+/* 모바일메뉴 */
+/* .hamburger-menu {
+  display: none;
+} */
+
+.Button_btn__GL0WK a,
+.Button_btn__GL0WK button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  will-change: color, background-color;
+  transition:
+    color 0.2s ease 0s,
+    background-color 0.2s ease 0s;
+  width: inherit;
+  line-height: 0;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #fff;
+  background-color: #1a1a1a;
+  padding: 0 24px;
+}
+.mobile-menu {
+  display: none;
+}
+/* 768px ~ 1023px */
+/*768*/
+@media (max-width: 768px) {
+  #header h1 {
+    font-size: 23px;
+  }
+
+  #header {
+    height: 60px;
+    padding: 0px 25px;
+  }
+
+  #header .lognbt {
+    display: none;
+  }
+
+  #header .gnb {
+    display: none;
+  }
+
+  /*모바일메뉴*/
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+  }
+  .hamburger span {
+    width: 22px;
+    height: 2px;
+    background-color: #333;
+    display: block;
+  }
+
+  /* section h2 {
+  font-size: clamp(20px, 2vw, 40px);
+
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2%;
+} */
+
+  /* 모바일일때 사이드메뉴 */
+  .mobil-menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 99999;
+    padding: 20px 25px;
+    transition: all 0.3s;
+  }
+  .mobil-menu.active {
+    left: 0;
+  }
+  .mobil-menu li {
+    border-bottom: 1px solid #eee;
+  }
+  .mobil-menu li:last-child {
+    border: none;
+  }
+  .mobil-menu li a {
+    display: block;
+    padding: 16px 10px;
+    font-weight: 600;
+  }
+  .mobil-menu h1 {
+    font-size: 22px;
+  }
+  .mobil-menu a.m_login {
+    border: 1px solid;
+    background-color: #1a1a1a;
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    padding: 12px 0;
+    border-radius: 5px;
+    margin: 16px 0;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    opacity: 0;
+    visibility: hidden; /*영역을 안 보이게 하는거*/
+    transition: all 0.3s;
+  }
+  .overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /*햄버거 메뉴 클릭시 X변경*/
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-4px, 4px);
+  }
+  .hamburger.active span:nth-child(2) {
+    display: none;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(45deg);
+  }
+}

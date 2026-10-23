@@ -1,0 +1,88 @@
+/*단락 03스와이퍼 2개 */
+
+#banner-swiper .inner02 {
+  display: flex;
+  gap: 22px;
+}
+#banner-swiper .inner02 > div {
+  flex: 1;
+  border-radius: 25px;
+}
+#banner-swiper img {
+  width: 100%;
+  display: block;
+}
+
+/* section06_마지막 스와이퍼03 */
+.swiper03 {
+  padding: 0 40px;
+  height: 364px;
+}
+.swiper03 .banner03-sw {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 25px;
+}
+
+.banner03-sw img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.swiper03 .swiper-button-next,
+.swiper03 .swiper-button-prev {
+  width: 48px;
+  height: 48px;
+  will-change: background-color;
+  transition: background-color 0.2s ease 0s;
+  background-color: hsla(0, 0%, 100%, 0.9);
+  border-radius: 100%;
+  margin-top: -24px;
+}
+
+.swiper03 .swiper-button-next:after,
+.swiper03 .swiper-button-prev:after {
+  width: 18px;
+  height: 18px;
+  content: "";
+  font-size: 0;
+  display: block;
+  background: url("../images/arrow.svg") 0 0/100% auto no-repeat;
+}
+
+/* .swiper03 .swiper-button-next, .swiper03 .swiper-button-prev {
+   
+    display: none;
+} */
+
+/* 스와이퍼03 양쪽버튼 기존 삭제후 이미지 입힘 */
+.swiper03 ::slotted(svg),
+.swiper03 svg {
+  display: none;
+}
+
+.swiper03 .swiper-button-next:after {
+  transform: rotate(180deg);
+}
+.swiper03 .swiper-button-prev {
+  margin-left: 40px !important;
+}
+.swiper03 .swiper-button-next {
+  margin-right: 40px !important;
+}
+
+/*768*/
+@media (max-width: 768px) {
+  #banner-swiper .inner02 {
+    flex-direction: column;
+  }
+
+  #banner-swiper .inner02 > div {
+    width: 100%;
+  }
+  
+}

@@ -1,0 +1,230 @@
+@import url(font.css);
+
+/* 1000 */
+@media (max-width: 1400px) {
+  #top_banner ul li a {
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 20px 0 18px;
+  }
+
+  #top_banner dl {
+    flex-basis: auto;
+  }
+  #top_banner dl dt {
+    font-size: 12px;
+
+    gap: 1px;
+  }
+  #top_banner dl dt::after {
+    width: 12px;
+    height: 12px;
+    margin-top: 3px;
+  }
+  #top_banner dl dd {
+    display: none;
+  }
+}
+/* 768px ~ 1023px */
+/*768*/
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background-color: aquamarine;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  .menu.show {
+    display: flex;
+    font-weight: 500;
+  }
+
+  .nav {
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  /*메인*/
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: 30px;
+    align-items: flex-start;
+  }
+  .intro-text h2 {
+    font-size: 28px;
+  }
+  .intro-text p {
+    font-size: 15px;
+  }
+
+  .card-list ul {
+    /* grid-template-columns: repeat(2, minmax(0, 1fr)); */
+  }
+
+  /* section04 배너 */
+  .ba_imgbox {
+    margin: 0px 40px;
+    padding: 100px 0;
+    background: url("../images/bg_business.png") no-repeat center 0;
+    border-radius: 20px;
+    background-size: cover;
+  }
+  .veiwba_txt p {
+    font-size: 22px;
+
+    line-height: 33px;
+    font-weight: 500;
+  }
+  .veiwba_txt a {
+    font-weight: 700;
+    padding: 15px 21px;
+    font-size: 14px;
+  }
+  #product h2 {
+    font-size: 24px;
+    margin-bottom: 45px;
+    letter-spacing: -1px;
+  }
+  .product_box {
+    justify-content: space-between;
+    gap: 40px 20px;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 0 40px;
+  }
+
+  .product_list {
+    width: calc(50% - 10px);
+    padding: 133px 20px 30px;
+  }
+
+  #bt_bannar .bt_bannar_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 40px;
+  }
+  .ba-large {
+    padding: 36px;
+    height: 300px !important;
+  }
+  .product-card {
+    width: 100%;
+    height: 200px;
+  }
+  #bt_bannar h3 {
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    font-weight: 700;
+  }
+
+  #bt_bannar p {
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 7px;
+  }
+  #bt_bannar h4 {
+    font-size: 22px;
+    letter-spacing: -0.5px;
+    font-weight: 700;
+  }
+  #bt_bannar h2 {
+    font-size: 24px;
+  }
+
+  /* 하단퀵메뉴 */
+  #Q_bannar {
+    background: url("../images/m_bg_news.png") no-repeat center center;
+    padding: 50px 0;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  #Q_bannar .Q_batxt a {
+    display: flex;
+    gap: 17px;
+    background-color: #fff;
+    padding: 40px 60px;
+
+    margin: 8px 0px;
+
+    align-items: center;
+  }
+  #Q_bannar dt {
+    margin: 0;
+  }
+
+  .Home_scNews__bg__G0TLk img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+  }
+  #bt_gnb {
+    display: none;
+  }
+}
+
+/*480*/
+@media (max-width: 480px) {
+  .intro-text br {
+    display: block;
+  }
+  .card-list ul {
+    /* grid-template-columns: repeat(2, minmax(0, 1fr)); */
+  }
+  .country p {
+    font-size: 14px;
+  }
+  .card-list h3 {
+    font-size: 16px;
+  }
+  .price {
+    font-size: 16px;
+  }
+}
+
+/*390*/
+
+@media (max-width: 390px) {
+  header {
+    height: 55px;
+  }
+
+  header h1 {
+    font-size: 22px;
+  }
+  .intro-text h2 {
+    font-size: 33px;
+  }
+  .intro-text p {
+    font-size: 14px;
+  }
+  .filter-btn .filter-btn p {
+    font-size: 14px;
+  }
+  .filter-btn span {
+    display: none;
+  }
+  .filter-btn img {
+    width: 20px;
+  }
+  .card-list ul {
+    /* grid-template-columns: 1fr; */
+  }
+}

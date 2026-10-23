@@ -1,0 +1,140 @@
+#footer {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer_top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.footer_top a.bt_logo {
+  width: 81px;
+  height: 20px;
+  display: block;
+  background: url("../images/bt_logo.png") 0 0/81px auto no-repeat;
+}
+#footer .footer_top .footer_sns {
+  display: flex;
+  gap: 12px;
+}
+#footer .footer_top .footer_menu {
+  display: flex;
+  gap: 30px;
+  font-size: 13px;
+  color: #8b95a1;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+}
+
+#footer .footer_top .footer_sns a {
+  width: 28px;
+  height: 28px;
+  display: block;
+  background: url("../images/footer_snsicon.png") 0 0/168px auto no-repeat;
+}
+#footer .footer_top .footer_sns a:nth-child(2) {
+  background-position-x: -28px;
+}
+#footer .footer_top .footer_sns a:nth-child(3) {
+  background-position-x: -56px;
+}
+
+#footer .footer_top .footer_sns a:nth-child(4) {
+  background-position-x: -84px;
+}
+#footer .footer_top .footer_sns a:nth-child(5) {
+  background-position-x: -112px;
+}
+
+#footer .footer_top .footer_sns a:nth-child(6) {
+  background-position-x: -140px;
+}
+#footer address {
+  display: inline;
+  font-size: 13px;
+  line-height: 1.55;
+  color: #8b95a1;
+}
+
+.footer_bottom {
+  display: flex;
+}
+.footer_bottom dl {
+  font-size: 13px;
+  line-height: 1.55;
+  color: #8b95a1;
+  display: flex;
+  gap: 15px;
+}
+.footer_bottom dl dd {
+  padding-left: 4px;
+}
+
+.footer_top .site_bt {
+  z-index: 10;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  cursor: pointer;
+  color: #8b95a1;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 5px;
+}
+.footer_top .site_bt:hover {
+  background-color: rgba(139, 149, 161, 0.1);
+}
+
+.footer_top .site_bt:after {
+  display: inline-block;
+  vertical-align: -2px;
+  width: 12px;
+  height: 12px;
+  content: "";
+  margin-left: 5px;
+  background: url("../images/plus.svg") no-repeat;
+}
+
+/* 768px ~ 1023px */
+/*768*/
+@media (max-width: 768px) {
+  .footer_top {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  #footer .footer_top .footer_menu {
+    font-size: 12px;
+  }
+
+  .Footer_company__detail__UchC_ {
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+
+  .footer_bottom {
+    display: flex;
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    /* text-align: left; */
+    column-gap: 10px;
+  }
+  .footer_bottom dl {
+    font-size: 12px;
+    line-height: 1.55;
+    gap: 0px;
+  }
+  .footer_top .site_bt {
+    display: none;
+  }
+}

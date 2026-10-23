@@ -1,0 +1,317 @@
+#wrap {
+  width: 100%;
+}
+
+.inner {
+  width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+.inner02 {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 40px;
+}
+/* 상단 카테고리 배너 */
+#top_banner {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+#top_banner ul {
+  display: flex;
+  column-gap: 12px;
+  padding: 36px 0 36px;
+}
+
+#top_banner ul li {
+  flex-basis: 100%;
+  border-radius: 10px;
+  box-shadow:
+    0 0 2px rgba(0, 0, 0, 0.08),
+    4px 12px 20px rgba(0, 0, 0, 0.09);
+  overflow: hidden;
+  transition: transform 0.2s ease 0s;
+}
+#top_banner ul li:hover {
+  transform: translateY(-7px);
+  transition: transform 0.2s ease 0s;
+}
+
+#top_banner ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  column-gap: 6%;
+  background: #fff;
+
+  padding: 26px 0 28px;
+}
+#top_banner ul li p {
+  width: 44px;
+  height: 44px;
+}
+#top_banner ul li p img {
+  width: 100%;
+}
+#top_banner dl {
+  flex-basis: 90px;
+}
+#top_banner dl dt {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  display: flex;
+  gap: 3px;
+}
+
+#top_banner dl dt::after {
+  display: inline-block;
+  vertical-align: top;
+  width: 12px;
+  height: 13px;
+  content: "";
+  background: url("../images/arrow03.svg") 0 0px/100% auto no-repeat;
+  margin-top: 4px;
+}
+
+#top_banner dl dd {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  color: #707070;
+  line-height: 14px;
+}
+
+/* 자세히보기 배너 */
+#veiwba {
+  max-width: 1920px;
+  width: 100%;
+  margin: 28px auto 0;
+  text-align: center;
+}
+.ba_imgbox {
+  margin: 0px 40px;
+  padding: 200px 0;
+  background: url("../images/bg_business.png") no-repeat center 0;
+  border-radius: 20px;
+  background-size: cover;
+}
+.veiwba_txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.veiwba_txt p {
+  font-size: 40px;
+  color: #fff;
+  line-height: 55px;
+  font-weight: 600;
+}
+.veiwba_txt a {
+  background-color: #fff;
+  border-radius: 8px;
+  font-weight: 700;
+  padding: 20px 30px;
+  font-size: 17px;
+  transition: transform 0.5s ease 0s;
+}
+.veiwba_txt a:hover {
+  background-color: #e7e7e7;
+  transition: transform 0.5s ease 0s;
+}
+
+.veiwba_txt a:after {
+  display: inline-block;
+  vertical-align: -2px;
+  width: 16px;
+  height: 16px;
+  content: "";
+  background: url("../images/arrow03.svg") 0 0/100% auto no-repeat;
+  margin-left: 8px;
+}
+
+/* bt_bannrt */
+#bt_bannar {
+  margin: 100px auto;
+  max-width: 1920px;
+  width: 100%;
+}
+
+#bt_bannar h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 60px;
+  letter-spacing: -0.5px;
+}
+
+/* 전체 그리드 */
+#bt_bannar .bt_bannar_list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(2, 360px);
+  gap: 28px;
+  padding: 0 40px;
+
+  margin: 0 auto;
+}
+
+/* 섹션07 _ 활용하는 꿀팁 */
+.product-card {
+  position: relative;
+  min-width: 0;
+  padding: 36px;
+  border-radius: 28px;
+  overflow: hidden;
+  transition: transform 0.2s ease 0s;
+  cursor: pointer;
+}
+.product-card:hover {
+  transform: translateY(-10px);
+  transition: transform 0.2s ease 0s;
+}
+.product-card:hover:after {
+  opacity: 1;
+  transform: translateX(10px);
+  transition: transform 0.2s ease 0s;
+}
+
+.product-card:after {
+  position: absolute;
+  top: 36px;
+  right: 36px;
+  width: 33px;
+  height: 33px;
+  content: "";
+  display: block;
+  background: url("../images/goto.svg") 0 0/100% auto no-repeat;
+  opacity: 0.9;
+}
+
+#bt_bannar h3 {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+  word-break: keep-all;
+}
+#bt_bannar h4 {
+  font-size: 22px;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+}
+#bt_bannar p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 12px;
+}
+
+.product-card img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*꽉채우기*/
+  object-position: 100% 100%;
+  z-index: -10;
+}
+/* 왼쪽 큰 배너 */
+.ba-large {
+  grid-row: span 2;
+  padding: 80px 60px;
+}
+
+/* section06_Q배너 */
+#Q_bannar {
+  background: url("../images/bg_news.png") no-repeat center 0;
+  padding: 110px 0;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+#Q_bannar .Q_batxt a {
+  display: inline-flex;
+  gap: 25px;
+  background-color: #fff;
+  padding: 40px 60px;
+  border-radius: 15px;
+  margin: 0 8px;
+  transition: box-shadow 0.2s ease 0s;
+}
+#Q_bannar .Q_batxt:hover a {
+  box-shadow:
+    0 0 2px rgba(0, 0, 0, 0.08),
+    4px 12px 36px rgba(0, 0, 0, 0.09);
+}
+
+#Q_bannar p {
+  width: 40px;
+  height: 40px;
+}
+#Q_bannar p img {
+  width: 100%;
+}
+
+#Q_bannar dt {
+  font-size: 16px;
+  font-weight: 400;
+  align-items: center;
+  margin-bottom: 7px;
+  text-align: left;
+  color: #4e5968;
+}
+#Q_bannar dd {
+  text-align: left;
+  font-size: 17px;
+  font-weight: 600;
+}
+#Q_bannar dd::after {
+  display: inline-block;
+  vertical-align: -2px;
+  width: 16px;
+  height: 16px;
+  content: "";
+  background: url("../images/arrow03.svg") 0 0/100% auto no-repeat;
+  margin-left: 5px;
+}
+
+/* 하단gnb */
+#bt_gnb {
+  background-color: rgba(245, 246, 247, 0.75);
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+#bt_gnb .bt_gnb_list p a {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  display: inline-block;
+}
+#bt_gnb .bt_gnb_list ul li a {
+  font-size: 14px;
+  color: #979797;
+
+  letter-spacing: -0.3px;
+  padding: 8px 10px;
+  display: inline-block;
+  border-radius: 4px;
+  transition: background-color 0.1s ease 0s;
+}
+#bt_gnb .bt_gnb_list ul li a:hover {
+  background-color: rgba(139, 149, 161, 0.1);
+}
+
+.bt_gnb_list .ul_flex {
+  display: flex;
+  gap: 35px;
+}
